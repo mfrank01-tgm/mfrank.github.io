@@ -1,0 +1,424 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/titleicon.ico">
+    <title>Michael Frank</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:400,200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+    <div class="slideUp">
+        <div class="top-bar" id="top-menu" data-topbar>
+                <a href="./" class="hide-for-small-only">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 2000 2000" enable-background:"new 0 0 2000 2000"; xml:space="preserve" class="top-bar-logo">
+                    <path class="m_logo" d="M1475.039,371.808L945.921,1856.806h-72.505L319.255,382.474v1133.031c0,67.442,8.405,117.873,25.283,151.224
+                      c16.844,33.384,40.877,59.038,72.135,76.963c31.224,17.923,44.119,28.996,116.456,33.181v79.934H42.732v-79.934
+                      c95.697-6.313,102.346-27.037,136.574-62.144c34.228-35.104,51.376-97.25,51.376-186.431V453.866
+                      c0-26.666-8.034-46.177-24.102-58.463c-16.067-12.288-46.11-18.431-90.126-18.431H42.732V297.04h462.65l463.057,1231.799
+                      L1394.262,368.33c0,0,26.141-80.212,39.979-104.529c57.522-101.086,150.719-154.093,257.25-154.093
+                      c79.19,0,141.063,15.021,185.552,53.638c44.491,38.616,66.77,89.181,66.77,151.695c0,40.743-10.734,72.878-32.137,96.406
+                      c-21.434,23.527-48.676,35.275-81.688,35.275c-29.502,0-53.939-9.452-73.248-28.354c-19.308-18.903-28.961-42.701-28.961-71.426
+                      c0-32.878,12.759-59.849,38.277-80.878c20.559-16.777,30.854-29.367,30.854-37.806c0-11.882-7.9-22.751-23.662-32.541
+                      c-15.766-9.79-39.393-14.717-70.887-14.717c-59.544,0-143.452,26.747-178.145,83.93
+                      C1508.958,290.076,1475.039,371.808,1475.039,371.808z"/>
+                    <path class="f_logo" d="M1701.749,1791.068c-37.905,0-67.374-8.776-88.405-26.328c-15.458-13.334-23.154-36.524-23.154-69.572V974.459h170.665
+                      v-92.894h-170.665c0,0,0.243-188.694,0-190.775c-1.232-10.566-10.179-18.78-21.074-18.78c-7.981,0-14.145,4.218-17.399,10.92
+                      c-2.226,4.58-136.515,369.87-136.515,369.87v660.293c0,26.7-7.391,46.38-22.178,59.003c-14.785,12.659-40.811,18.972-78.074,18.972
+                      h-44.491v79.933h520.643v-79.933H1701.749z"/>
+                  </svg>
+                </a>
+          <div class="top-bar-left">
+            <ul class="dropdown menu middle" data-dropdown-menu>
+              <li class="show-for-small-only middle logo">
+                <a href="./">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 2000 2000" enable-background:"new 0 0 2000 2000"; xml:space="preserve" class="top-bar-logo">
+                    <path class="m_logo" d="M1475.039,371.808L945.921,1856.806h-72.505L319.255,382.474v1133.031c0,67.442,8.405,117.873,25.283,151.224
+                      c16.844,33.384,40.877,59.038,72.135,76.963c31.224,17.923,44.119,28.996,116.456,33.181v79.934H42.732v-79.934
+                      c95.697-6.313,102.346-27.037,136.574-62.144c34.228-35.104,51.376-97.25,51.376-186.431V453.866
+                      c0-26.666-8.034-46.177-24.102-58.463c-16.067-12.288-46.11-18.431-90.126-18.431H42.732V297.04h462.65l463.057,1231.799
+                      L1394.262,368.33c0,0,26.141-80.212,39.979-104.529c57.522-101.086,150.719-154.093,257.25-154.093
+                      c79.19,0,141.063,15.021,185.552,53.638c44.491,38.616,66.77,89.181,66.77,151.695c0,40.743-10.734,72.878-32.137,96.406
+                      c-21.434,23.527-48.676,35.275-81.688,35.275c-29.502,0-53.939-9.452-73.248-28.354c-19.308-18.903-28.961-42.701-28.961-71.426
+                      c0-32.878,12.759-59.849,38.277-80.878c20.559-16.777,30.854-29.367,30.854-37.806c0-11.882-7.9-22.751-23.662-32.541
+                      c-15.766-9.79-39.393-14.717-70.887-14.717c-59.544,0-143.452,26.747-178.145,83.93
+                      C1508.958,290.076,1475.039,371.808,1475.039,371.808z"/>
+                    <path class="f_logo" d="M1701.749,1791.068c-37.905,0-67.374-8.776-88.405-26.328c-15.458-13.334-23.154-36.524-23.154-69.572V974.459h170.665
+                      v-92.894h-170.665c0,0,0.243-188.694,0-190.775c-1.232-10.566-10.179-18.78-21.074-18.78c-7.981,0-14.145,4.218-17.399,10.92
+                      c-2.226,4.58-136.515,369.87-136.515,369.87v660.293c0,26.7-7.391,46.38-22.178,59.003c-14.785,12.659-40.811,18.972-78.074,18.972
+                      h-44.491v79.933h520.643v-79.933H1701.749z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="middle"><a href="#about" data-smooth-scroll data-offset="-50" data-animation-easing="swing">About</a></li>
+              <li class="middle"><a href="#experience" data-smooth-scroll data-offset="-50" data-animation-easing="swing">Experience / Education</a></li>
+              <li class="middle"><a href="#projects" data-smooth-scroll data-offset="-50" data-animation-easing="swing">Projects</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right hide-for-small-only">
+            <a href="https://github.com/mfrank01-tgm" target="_blank">
+              <i class="fi-social-github icon-size"></i>
+            </a>
+            <a href="http://www.linkedin.com/in/michaelgabrielfrank" target="_blank">
+              <i class="fi-social-linkedin icon-size"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="bg">
+      <div class="static">
+          <div class="top-bar" id="top-menu" data-topbar>
+                  <a href="./" class="hide-for-small-only">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 2000 2000" enable-background:"new 0 0 2000 2000"; xml:space="preserve" class="top-bar-logo">
+                      <path class="m_logo" d="M1475.039,371.808L945.921,1856.806h-72.505L319.255,382.474v1133.031c0,67.442,8.405,117.873,25.283,151.224
+                        c16.844,33.384,40.877,59.038,72.135,76.963c31.224,17.923,44.119,28.996,116.456,33.181v79.934H42.732v-79.934
+                        c95.697-6.313,102.346-27.037,136.574-62.144c34.228-35.104,51.376-97.25,51.376-186.431V453.866
+                        c0-26.666-8.034-46.177-24.102-58.463c-16.067-12.288-46.11-18.431-90.126-18.431H42.732V297.04h462.65l463.057,1231.799
+                        L1394.262,368.33c0,0,26.141-80.212,39.979-104.529c57.522-101.086,150.719-154.093,257.25-154.093
+                        c79.19,0,141.063,15.021,185.552,53.638c44.491,38.616,66.77,89.181,66.77,151.695c0,40.743-10.734,72.878-32.137,96.406
+                        c-21.434,23.527-48.676,35.275-81.688,35.275c-29.502,0-53.939-9.452-73.248-28.354c-19.308-18.903-28.961-42.701-28.961-71.426
+                        c0-32.878,12.759-59.849,38.277-80.878c20.559-16.777,30.854-29.367,30.854-37.806c0-11.882-7.9-22.751-23.662-32.541
+                        c-15.766-9.79-39.393-14.717-70.887-14.717c-59.544,0-143.452,26.747-178.145,83.93
+                        C1508.958,290.076,1475.039,371.808,1475.039,371.808z"/>
+                      <path class="f_logo" d="M1701.749,1791.068c-37.905,0-67.374-8.776-88.405-26.328c-15.458-13.334-23.154-36.524-23.154-69.572V974.459h170.665
+                        v-92.894h-170.665c0,0,0.243-188.694,0-190.775c-1.232-10.566-10.179-18.78-21.074-18.78c-7.981,0-14.145,4.218-17.399,10.92
+                        c-2.226,4.58-136.515,369.87-136.515,369.87v660.293c0,26.7-7.391,46.38-22.178,59.003c-14.785,12.659-40.811,18.972-78.074,18.972
+                        h-44.491v79.933h520.643v-79.933H1701.749z"/>
+                    </svg>
+                  </a>
+            <div class="top-bar-left">
+              <ul class="dropdown menu middle" data-dropdown-menu>
+                <li class="show-for-small-only middle logo">
+                  <a href="./">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 2000 2000" enable-background:"new 0 0 2000 2000"; xml:space="preserve" class="top-bar-logo">
+                      <path class="m_logo" d="M1475.039,371.808L945.921,1856.806h-72.505L319.255,382.474v1133.031c0,67.442,8.405,117.873,25.283,151.224
+                        c16.844,33.384,40.877,59.038,72.135,76.963c31.224,17.923,44.119,28.996,116.456,33.181v79.934H42.732v-79.934
+                        c95.697-6.313,102.346-27.037,136.574-62.144c34.228-35.104,51.376-97.25,51.376-186.431V453.866
+                        c0-26.666-8.034-46.177-24.102-58.463c-16.067-12.288-46.11-18.431-90.126-18.431H42.732V297.04h462.65l463.057,1231.799
+                        L1394.262,368.33c0,0,26.141-80.212,39.979-104.529c57.522-101.086,150.719-154.093,257.25-154.093
+                        c79.19,0,141.063,15.021,185.552,53.638c44.491,38.616,66.77,89.181,66.77,151.695c0,40.743-10.734,72.878-32.137,96.406
+                        c-21.434,23.527-48.676,35.275-81.688,35.275c-29.502,0-53.939-9.452-73.248-28.354c-19.308-18.903-28.961-42.701-28.961-71.426
+                        c0-32.878,12.759-59.849,38.277-80.878c20.559-16.777,30.854-29.367,30.854-37.806c0-11.882-7.9-22.751-23.662-32.541
+                        c-15.766-9.79-39.393-14.717-70.887-14.717c-59.544,0-143.452,26.747-178.145,83.93
+                        C1508.958,290.076,1475.039,371.808,1475.039,371.808z"/>
+                      <path class="f_logo" d="M1701.749,1791.068c-37.905,0-67.374-8.776-88.405-26.328c-15.458-13.334-23.154-36.524-23.154-69.572V974.459h170.665
+                        v-92.894h-170.665c0,0,0.243-188.694,0-190.775c-1.232-10.566-10.179-18.78-21.074-18.78c-7.981,0-14.145,4.218-17.399,10.92
+                        c-2.226,4.58-136.515,369.87-136.515,369.87v660.293c0,26.7-7.391,46.38-22.178,59.003c-14.785,12.659-40.811,18.972-78.074,18.972
+                        h-44.491v79.933h520.643v-79.933H1701.749z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="middle"><a href="#about" data-smooth-scroll data-offset="-50" data-animation-easing="swing">About</a></li>
+                <li class="middle"><a href="#experience" data-smooth-scroll data-offset="-50" data-animation-easing="swing">Experience / Education</a></li>
+                <li class="middle"><a href="#projects" data-smooth-scroll data-offset="-50" data-animation-easing="swing">Projects</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right hide-for-small-only">
+              <a href="https://github.com/mfrank01-tgm" target="_blank">
+                <i class="fi-social-github icon-size"></i>
+              </a>
+              <a href="http://www.linkedin.com/in/michaelgabrielfrank" target="_blank">
+                <i class="fi-social-linkedin icon-size"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="top-name">
+        <h1><!--<d># </d>--><d>I'm</d> Michael Frank</h1>
+        <h2> A <d>Developer</d></h2>
+      </div>
+      <div class="arrow_down">
+        <a href="#about" data-smooth-scroll data-offset=50 data-animation-easing='swing'>
+          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	      viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;stroke:#000000;stroke-width:50;stroke-miterlimit:10;}
+            </style>
+            <path class="st0" d="M471.4,459.6L37.6,116.7c-4.7-4.5-4.8-12.1-0.3-16.8l0,0c4.5-4.7,12.1-4.8,16.8-0.3l433.8,342.9
+              c4.7,4.5,4.8,12.1,0.3,16.8v0C483.7,464,476.1,464.2,471.4,459.6z"/>
+            <path class="st0" d="M488.6,459.6l433.8-342.9c4.7-4.5,4.8-12.1,0.3-16.8l0,0c-4.5-4.7-12.1-4.8-16.8-0.3L472.1,442.5
+              c-4.7,4.5-4.8,12.1-0.3,16.8v0C476.3,464,483.9,464.2,488.6,459.6z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <section id="about">
+      <div class="grid-container grid-container-padding">
+          <div class="about-container">
+              <div class="grid-x">
+                  <div class="left-cell cell large-4 medium-5 small-12">
+                      <img src="assets/img/profile.jpg" alt="Profile">
+                  </div>
+                  <div class="cell large-8 medium-7 small-12">
+                      <h2>About Me</h2>
+                      <div class="content">
+                          <p>
+                              Hi, my name is Michael Frank and I'm a developer from Austria. I have a passion 
+                              for hard- and software since I was a child. Because of my permanent curiosity, 
+                              I'm still learning something new every day.
+                          </p>
+                      </div>
+                      <br>
+                      <div class="grid-x grid-padding-x buttons-about">
+                          <div class="cell large-6">
+                              <a class="hollow button" href="mailto:information.mfrank@gmail.com"><i class="fi-mail"></i>&nbsp;&nbsp;Contact Me</a>
+                          </div>
+                          <div class="cell large-6">
+                              <a class="hollow button" href="assets/files/CV_Frank_Michael.pdf" target="_blank"><i class="fi-download"></i>&nbsp;&nbsp;Download CV</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div></section>
+    <section id="experience">
+      <div class="grid-container fluid">
+        <div class="grid-x grid-padding-x">
+          <div class="experience-container cell large-6">
+            <h2>Experience</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month">april 2020 - today</p>
+                  <p><b>Java Developer</b></p>
+                  <p>Compax Group</p>
+                  <p>
+                    Programming CRM tools for telecommunication companies.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month">september 2019 - march 2020</p>
+                  <p><b>Guardsman</b></p>
+                  <p>Austrian military forces</p>
+                  <p>
+                    Six months conscription at Maria-Theresien-Kaserne
+                  </p>
+                </div>
+              </div>
+      
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month">july 2017 - april 2018</p>
+                    <p>
+                      <b>Facility Mangement</b><br>
+                      SeneCura GmbH <br>
+                      Database Management for maintenance and operations
+                    </p>
+                </div>
+              </div>
+      
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month">july 2016</p>
+                    <p>
+                      <b>Logistic</b><br>
+                      FHW Franz Haas Waffelmaschienen GmbH <br>
+                      Managing SAP Database for spare parts
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-6">
+            <h2>Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content left">
+                  <p class="timeline-content-month">september 2020 - today</p>
+                  <p>
+                    <b>FH St. Pölten</b><br>
+                  </p>
+                  <p>
+                    Studying Data Science & Business Analytics
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content left">
+                  <p class="timeline-content-month">september 2014 - july 2019</p>
+                  <p>
+                    <b>HTL TGM</b><br>
+                  </p>
+                  <p>
+                    Graduated from a HTL majoring in information technology (i.e. computer science)<br>
+                    Focus in media technology
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon"> </div>
+                <div class="timeline-content left">
+                  <p class="timeline-content-month">september 2010 - july 2014</p>
+                  <p>
+                    <b>AHS Contiweg</b> <br>
+                    Secondary school
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content left">
+                  <p class="timeline-content-month">september 2010 - july 2014</p>
+                  <p>
+                    Primary school Eßling
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></section>
+    <section id="projects">
+      <div class="grid-container grid-container-padding">
+          <div class="experience-container">
+              <h2>Projects</h2>
+              <div class="grid-x grid-margin-x">
+                  <div class="cell shrink large-4 medium-6 small-12 card-article-hover card">
+                      <a  data-open="pModal1">
+                          <div class="card-img">
+                              <img src="assets/img/joinme_logo.jpg">
+                          </div>
+                      </a>
+                      <div class="card-section">
+                          <div class="article-subtext article-date">2019</div>
+                          <div class="meta-data article-subtext">DIPLOMA THESIS</div>
+                          <a  data-open="pModal1">
+                          <h3 class="article-title">JoinMe - The best way to meet new people!</h3>
+                          </a>
+                          <p class="article-desc">
+                              An app that allows people to get closer to each other in a world, in which people are as distant as it is today.
+                              <a data-open="pModal1">Learn more</a>
+                          </p>
+                          <div class="card-link">
+                              <p>
+                                  <a class="hollow button" disabled><i class="fi-social-github"></i>&nbsp;&nbsp;Private Code</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="cell shrink large-4 medium-6 small-12 card-article-hover card">
+                      <a  data-open="pModal2">
+                          <div class="card-img">
+                              <img src="assets/img/kuka_robot.jpg">
+                          </div>
+                      </a>
+                      <div class="card-section">
+                          <div class="article-subtext article-date">2018</div>
+                          <p class="meta-data article-subtext">SCHOOL PROJECT</p>
+                          <a  data-open="pModal2">
+                          <h3 class="article-title">Generiative 3D Transportation</h3>
+                          </a>
+                          <p class="article-desc">
+                              A simulation that demonstrates generative design for 3D printing in cooperation with CANON.
+                              <a data-open="pModal2">Learn more</a>
+                          </p>
+                          <div class="card-link">
+                              <p>
+                                  <a class="hollow button" href="https://github.com/Generic3DTransportation/TransportationScript" target="_blank"><i class="fi-social-github"></i>&nbsp;&nbsp;View Code</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cell shrink large-4 medium-6 small-12 card-article-hover card">
+                      <a  data-open="pModal3">
+                          <div class="card-img">
+                              <img src="assets/img/sotd_logo.jpg">
+                          </div>
+                      </a>
+                      <div class="card-section">
+                          <div class="article-subtext article-date">2017</div>
+                          <p class="meta-data article-subtext">SCHOOL PROJECT</p>
+                          <a  data-open="pModal3">
+                          <h3 class="article-title">SkillOfTheDay</h3>
+                          </a>
+                          <p class="article-desc">
+                              An app that helps the user learn skills that are achievable in little time, like learning how to solve a rubiks cube.
+                              <a data-open="pModal3">Learn more</a>
+                          </p>
+                          <div class="card-link">
+                              <p>
+                                  <a class="hollow button" href="https://github.com/mvu-tgm/SOTDv2" target="_blank"><i class="fi-social-github"></i>&nbsp;&nbsp;View Code</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modals">
+          <div class="large reveal" id="pModal1" data-reveal>
+              <h2 class ="modal-title">JoinMe</h2>
+              <p class="lead">Abstract of diploma thesis</p>
+              <p>
+                  The goal of the diploma thesis is to design a smartphone application and all additional necessary background services. The use of the app can be described as following: "An app that allows people to get closer to each other in a world, in which people are as distant as it is today." Other than platforms such as Tinder or Lovoo, JoinMe does not rely on the sexual component, as it is in dating apps, but relies on the interests and hobbies of the users. Within the interface, it should be possible for the user to find groups of people, who share similar interests or hobbies and therefore represent "ideal" company. It should also be possible to join not only "temporary" but also "permanent" groups (an example for this would be a group of young athletes, who regularly meet for their training).Those groups can be found within a radius around a configurable location or purely based on certain interests. Because of security reasons, the profile of a user has to be verified through their phone number. All information about the user except the profile picture and username can be hidden from others. The scope of the entire project includes an Android as well as an iOS application, a backend and an administrative interface.
+              </p>
+              <div class="card-link">
+                  <p>
+                      <a class="hollow button" disabled><i class="fi-social-github"></i>&nbsp;&nbsp;Private Code</a>
+                  </p>
+              </div>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="large reveal" id="pModal2" data-reveal>
+              <h2 class ="modal-title">Generiative 3D Transportation</h2>
+              <p class="lead">Generative Design Simulation</p>
+              <p>
+                  The project serves the purpose to enlist generative design and to prospect customers for the technology. Because of this, the goal was to animate an industry robot that transports an object from a variable point A to a fixed point B in two different ways. The first was by hand, where the user manually sets keys and can rotate the arms of the robot in the given limitations. The second animation was created by an algorithm that uses “inverse kinematics” to calculate the shortest path between the two points with consideration to the limits of the robot arms. These two animations would then be made printable by a script. This programmed script displayed the animations with 4 pictures on a scale relative to the duration of the animation side by side to compare the user made animation and the animation of the algorithm.
+              </p>
+              <div class="card-link">
+                  <p>
+                      <a class="hollow button" href="https://github.com/Generic3DTransportation/TransportationScript" target="_blank"><i class="fi-social-github"></i>&nbsp;&nbsp;View Code</a>
+                  </p>
+              </div>
+              <img src="assets/img/gd_product.jpg" alt="">
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="large reveal" id="pModal3" data-reveal>
+              <h2 class ="modal-title">SOTD - Skill Off The Day</h2>
+              <p class="lead">An Android App</p>
+              <p>
+                  The goal of the project consisted of publishing a platform where users can learn skills that are achievable in little time. To achieve this, a sql database was build to store the skills and an android application was created to view these skills. A skill would be suggested every day for the user based on the skills the user previously rated well. The user could suggest new skills to be added to the database. 
+              </p>
+              <div class="card-link">
+                  <p>
+                      <a class="hollow button" href="https://github.com/SkillsOfTheDay/SOTD" target="_blank"><i class="fi-social-github"></i>&nbsp;&nbsp;View Code</a>
+                  </p>
+              </div>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+      </div>
+    </section>
+
+
+    <script src="assets/js/app.js"></script>
+  </body>
+  <footer class="cr-footer">
+      &copy; 2020 Michael Frank v1.0
+  </footer>
+</html>
